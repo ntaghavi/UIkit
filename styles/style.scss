@@ -1,15 +1,16 @@
 @import './body';
 @import './vars';
 
-@mixin flexCenter() {
+@mixin flexCenter($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: $direction;
 }
 
 
 header{
-    @include flexCenter();
+    @include flexCenter(column);
    background-color: lightblue;
    button{
     color: $primaryBtn;
@@ -18,5 +19,9 @@ header{
     }
    }
 
+}
+.contact{
+    @extend header;
+    background: pink;
 }
 
