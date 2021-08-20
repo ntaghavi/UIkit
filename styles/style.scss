@@ -1,6 +1,15 @@
 @import './body';
 @import './vars';
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 header{
+    @include flexCenter();
    background-color: lightblue;
    button{
     color: $primaryBtn;
