@@ -1,3 +1,8 @@
+html {
+  text-align: center;
+  color: black;
+}
+
 header {
   background-color: lightblue;
 }
@@ -6,8 +11,7 @@ header button {
   color: #38928e;
 }
 
-html {
-  text-align: center;
-  color: black;
+header button:hover {
+  background: pink;
 }
 /*# sourceMappingURL=style.css.map */
